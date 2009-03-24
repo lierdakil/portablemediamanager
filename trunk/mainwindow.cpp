@@ -19,6 +19,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "settingsdialog.h"
+#include "licensedialog.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindowClass)
@@ -39,6 +40,8 @@ MainWindow::MainWindow(QWidget *parent)
     actions=s.value("Actions",QStringList()).toStringList();
     fstypes=s.value("FSTypes",QStringList()).toStringList();
     moptions=s.value("MOptions",QStringList()).toStringList();
+
+    mounted=false;
 }
 
 MainWindow::~MainWindow()
@@ -51,7 +54,8 @@ MainWindow::~MainWindow()
     s.setValue("MOptions",moptions);
 
     delete fsmLocalMusicDir;
-    delete fsmRemoteMusicDir;
+    if(mounted)
+        delete fsmRemoteMusicDir;
     delete ui;
 }
 
@@ -259,4 +263,20 @@ void MainWindow::on_btDownload_clicked()
     } else {
         QMessageBox::information(this,tr("Source or destination not selected"),tr("Please, select directory to download on riht panel and directory to download to (or any file in that directory) on left panel"));
     }
+}
+
+void MainWindow::on_actionQuit_triggered()
+{
+    close();
+}
+
+void MainWindow::on_actionAbout_Qt_triggered()
+{
+    QMessageBox::aboutQt(this,tr("About Qt"));
+}
+
+void MainWindow::on_actionLicense_triggered()
+{
+    LicenseDialog d;
+    d.exec();
 }

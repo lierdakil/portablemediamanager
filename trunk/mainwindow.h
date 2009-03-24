@@ -53,6 +53,9 @@ private:
     void setMounted(bool state);
 
 private slots:
+    void on_actionLicense_triggered();
+    void on_actionAbout_Qt_triggered();
+    void on_actionQuit_triggered();
     void on_btDownload_clicked();
     void on_btRemoteDel_clicked();
     void on_btUnmount_clicked();
