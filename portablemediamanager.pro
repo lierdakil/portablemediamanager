@@ -13,7 +13,7 @@
 QT += dbus
 TARGET = portablemediamanager
 TEMPLATE = app
-DESTDIR = ~/bin
+DESTDIR = bin/
 SOURCES += main.cpp \
     mainwindow.cpp \
     settingsdialog.cpp \
@@ -29,3 +29,11 @@ FORMS += mainwindow.ui \
 TRANSLATIONS = portablemediamanager_ru.ts
 RESOURCES += icons.qrc \
     gpl.qrc
+target.path+=/usr/bin
+INSTALLS+=target
+images.files+=./portablemediamanager.png
+images.path+=/usr/share/pixmaps
+INSTALLS+=images
+desktop.files+=./portablemediamanager.desktop
+desktop.path+=/usr/share/applications
+INSTALLS+=desktop

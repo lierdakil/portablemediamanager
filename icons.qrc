@@ -9,4 +9,9 @@
         <file>delete_file.png</file>
         <file>add.png</file>
     </qresource>
+    <qresource prefix="/icons/128x128" >
+        <file>player.png</file>
+        <file>harddisk.png</file>
+        <file>portablemediamanager.png</file>
+    </qresource>
 </RCC>
