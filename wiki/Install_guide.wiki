@@ -8,7 +8,7 @@ If you want some help on creating and maintaining local portage overlay, I sugge
 
 = Other systems =
 
-There are no prebuilt packages (yet). So you will most likely need to checkout desired version rom svn and build it from source.
+There are no prebuilt packages (yet). So you will most likely need to checkout desired version from svn and build it from source.
 
 Currently, only one version is available -- development, or trunk.
 
