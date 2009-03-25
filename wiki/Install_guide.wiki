@@ -20,7 +20,9 @@ cd /home/user/src
 svn checkout "http://portablemediamanager.googlecode.com/svn/trunk/" portablemediamanager
 }}}
 
-then cd to Portabe Media Manager source directory
+== Build ==
+
+Cd to Portabe Media Manager source directory
 {{{
 cd portablemediamanager
 }}}
@@ -29,10 +31,20 @@ and run qmake, make and sudo make install
 {{{
 qmake portablemediamanager.pro
 make
-sudo make install
 }}}
 
+this will build Portable Media Manager. You can actually run it already from bin/portablemediamanager.
+
+==Install==
+
+In Portabe Media Manager source directory, execute
+{{
+sudo make install
+}}
+
 this will install binaries to /usr/bin, application icon to /usr/share/pixmaps and desktop file to /usr/share/applications. Now you should have Portable media Manager launch icon under Audio/Video category in your desktop environment's launch menu.
+
+==Uninstall==
 
 To uninstall, simply execute
 {{{
