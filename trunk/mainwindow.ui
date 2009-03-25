@@ -13,12 +13,39 @@
   <property name="windowTitle">
    <string>MediaMan</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/icons/128x128/portablemediamanager.png</normaloff>:/icons/128x128/portablemediamanager.png</iconset>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QLineEdit" name="leLocalMusicDir"/>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="lbHdPixmap">
+          <property name="maximumSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="icons.qrc">:/icons/128x128/harddisk.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="leLocalMusicDir"/>
+        </item>
+       </layout>
       </item>
       <item>
        <widget class="QTreeView" name="tvLocalMusicDir">
@@ -44,7 +71,7 @@
            <string>Settings</string>
           </property>
           <property name="icon">
-           <iconset>
+           <iconset resource="icons.qrc">
             <normaloff>:/icons/16x16/settings.png</normaloff>:/icons/16x16/settings.png</iconset>
           </property>
           <property name="iconSize">
@@ -96,7 +123,7 @@
          <string>Upload</string>
         </property>
         <property name="icon">
-         <iconset>
+         <iconset resource="icons.qrc">
           <normaloff>:/icons/16x16/upload.png</normaloff>:/icons/16x16/upload.png</iconset>
         </property>
         <property name="iconSize">
@@ -116,7 +143,7 @@
          <string>Download</string>
         </property>
         <property name="icon">
-         <iconset>
+         <iconset resource="icons.qrc">
           <normaloff>:/icons/16x16/download.png</normaloff>:/icons/16x16/download.png</iconset>
         </property>
         <property name="iconSize">
@@ -145,11 +172,34 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
-       <widget class="QLineEdit" name="leRemoteMusicDir">
-        <property name="readOnly">
-         <bool>true</bool>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="lbPlayerPixmap">
+          <property name="maximumSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="icons.qrc">:/icons/128x128/player.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="leRemoteMusicDir">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
       <item>
        <widget class="QTreeView" name="tvRemoteMusicDir">
@@ -191,7 +241,7 @@
            <string>Unmount</string>
           </property>
           <property name="icon">
-           <iconset>
+           <iconset resource="icons.qrc">
             <normaloff>:/icons/16x16/unmount.png</normaloff>:/icons/16x16/unmount.png</iconset>
           </property>
           <property name="iconSize">
@@ -208,7 +258,7 @@
            <string>Mount</string>
           </property>
           <property name="icon">
-           <iconset>
+           <iconset resource="icons.qrc">
             <normaloff>:/icons/16x16/mount.png</normaloff>:/icons/16x16/mount.png</iconset>
           </property>
           <property name="iconSize">
@@ -228,7 +278,7 @@
            <string>Delete</string>
           </property>
           <property name="icon">
-           <iconset>
+           <iconset resource="icons.qrc">
             <normaloff>:/icons/16x16/delete_file.png</normaloff>:/icons/16x16/delete_file.png</iconset>
           </property>
           <property name="iconSize">
@@ -290,6 +340,8 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
  <connections/>
 </ui>
