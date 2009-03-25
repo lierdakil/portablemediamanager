@@ -38,9 +38,9 @@ this will build Portable Media Manager. You can actually run it already from bin
 ==Install==
 
 In Portabe Media Manager source directory, execute
-{{
+{{{
 sudo make install
-}}
+}}}
 
 this will install binaries to /usr/bin, application icon to /usr/share/pixmaps and desktop file to /usr/share/applications. Now you should have Portable media Manager launch icon under Audio/Video category in your desktop environment's launch menu.
 
