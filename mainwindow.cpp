@@ -20,6 +20,7 @@
 #include "ui_mainwindow.h"
 #include "settingsdialog.h"
 #include "licensedialog.h"
+#include <unistd.h>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindowClass)
