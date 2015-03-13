@@ -10,7 +10,7 @@ This project also incorporates some icons from amazing GANT iconset.
 
 ## Gentoo ##
 
-There is a gentoo ebuild available. You can get it on [Downloads](http://code.google.com/p/portablemediamanager/downloads/list) page.
+There is a gentoo ebuild available. You can get it from ebuilds branch ([download](https://github.com/lierdakil/portablemediamanager/archive/ebuilds.tar.gz)) page.
 
 If you want some help on creating and maintaining local portage overlay, I suggest you to consult Gentoo Wiki: http://en.gentoo-wiki.com/wiki/Overlays#Creating_a_local_overlay
 
